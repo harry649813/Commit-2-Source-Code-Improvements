@@ -2,6 +2,17 @@
 
 //I, Harshitkumar Jadhav, 000771381 certify that this material is my original work. No other person's work has been used without due acknowledgement.
 
+/*
+ use PascalCasing for class names and method names.
+ use camelCasing for method arguments and local variables.
+ use PascalCasing for abbreviations 3 characters or more (2 chars are both uppercase)
+ use predefined type names instead of system type names like Int16, Single, UInt64, etc
+ use implicit type var for local variable declarations. Exception: primitive types (int, string, double, etc) use predefined names.
+ use noun or noun phrases to name a class.
+ vertically align curly brackets
+ declare all member variables at the top of a class, with static variables at the very top.
+ organize namespaces with a clearly defined structure
+ */
 using System;
 using System.Collections.Generic;
 
@@ -34,7 +45,7 @@ namespace COMP10066_Lab4
         {
             // Calculating the total set of samples
             double sumOfValue = Sum(numbers, negativeNumbers);
-            int valueCount = 0;
+            int ValueCount = 0;
 
             // For loop which will make if condition and return the average of total value divided by value count
             for (int i = 0; i < numbers.Count; i++)
@@ -42,16 +53,16 @@ namespace COMP10066_Lab4
                 // if condition for increment  
                 if (negativeNumbers || numbers[i] >= 0)
                 {
-                    valueCount++;
+                    ValueCount++;
                 }
             }
 
             // if condition that will throw exception 
-            if (valueCount == 0)
+            if (ValueCount == 0)
             {
                 throw new ArgumentException("no values are > 0");
             }
-            return sumOfValue / valueCount;
+            return sumOfValue / ValueCount;
         }
 
         /// <summary>
@@ -111,7 +122,7 @@ namespace COMP10066_Lab4
         /// </summary>
         /// <param name="data">This is a list of precision number with datatype double.</param>
         /// <returns>Precision value with datatype double which is the standard deviation of numbers.</returns>
-        public static double standardDeviation(List<double> data)
+        public static double StandardDeviation(List<double> data)
         {
             // if condition for data count to be less than or equal to 1, 
             // which will throw exception message 
@@ -151,7 +162,7 @@ namespace COMP10066_Lab4
 
             Console.WriteLine("The median value of the Double data set = {0}", Median(testDataD));
 
-            Console.WriteLine("The sample standard deviation of the Double test set = {0}\n", standardDeviation(testDataD));
+            Console.WriteLine("The sample standard deviation of the Double test set = {0}\n", StandardDeviation(testDataD));
         }
     }
 }
