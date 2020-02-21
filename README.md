@@ -3,15 +3,15 @@
 //I, Harshitkumar Jadhav, 000771381 certify that this material is my original work. No other person's work has been used without due acknowledgement.
 
 /*
- use PascalCasing for class names and method names.
- use camelCasing for method arguments and local variables.
- use PascalCasing for abbreviations 3 characters or more (2 chars are both uppercase)
- use predefined type names instead of system type names like Int16, Single, UInt64, etc
- use implicit type var for local variable declarations. Exception: primitive types (int, string, double, etc) use predefined names.
- use noun or noun phrases to name a class.
- vertically align curly brackets
- declare all member variables at the top of a class, with static variables at the very top.
- organize namespaces with a clearly defined structure
+ DO use PascalCasing for class names and method names.
+ DO use camelCasing for method arguments and local variables.
+ DO use PascalCasing for abbreviations 3 characters or more (2 chars are both uppercase)
+ DO use predefined type names instead of system type names like Int16, Single, UInt64, etc
+ DO use implicit type var for local variable declarations. Exception: primitive types (int, string, double, etc) use predefined names.
+ DO use noun or noun phrases to name a class.
+ DO vertically align curly brackets
+ DO declare all member variables at the top of a class, with static variables at the very top.
+ DO organize namespaces with a clearly defined structure
  */
 using System;
 using System.Collections.Generic;
